@@ -1,6 +1,6 @@
-# Dynamic Predicate Prototype Learning with Metric Learning for Scene Graph Generation
+# Query-Guided Predicate Decoupling and Prototype Approximation Learning for Scene Graph Generation
 
-This repository contains the official code implementation for the paper "Dynamic Predicate Prototype Learning with Metric Learning for Scene Graph Generation"
+This repository contains the official code implementation for the paper "Query-Guided Predicate Decoupling and Prototype Approximation Learning for Scene Graph Generation"
 
 ## Installation
 Check [INSTALL.md](./INSTALL.md) for installation instructions.
