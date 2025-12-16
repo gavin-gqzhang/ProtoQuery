@@ -2,24 +2,26 @@
 
 This repository contains the official code implementation for the paper "Query-Guided Predicate Decoupling and Prototype Approximation Learning for Scene Graph Generation"
 
-## Installation
+This [paper](https://www.sciencedirect.com/science/article/abs/pii/S0957417425031409) has been accepted by Expert Systems with Applications.
+
+## ⚙️ Installation
 Check [INSTALL.md](./INSTALL.md) for installation instructions.
 
-## Dataset
+## 📥 Dataset
 
 Check [DATASET.md](./DATASET.md) for instructions of dataset preprocessing.
 
-## Train
+## 🧮 Train
 We provide [scripts](./scripts/train.sh) for training the models
 
 ### <font color="red">If you have any questions, please contact me: guoqing.zhang@bjtu.edu.cn.</font>
 
-## Device
+## 💻 Device
 
 All our experiments are conducted on four NVIDIA GeForce RTX 3090, if you wanna run it on your own device, make sure to follow distributed training instructions in [Scene-Graph-Benchmark.pytorch](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch).
 
 
-## Logs
+## 📄 Logs
 
 <!-- Due to random seeds and machines, they are not completely consistent with those reported in the paper, but they are within the allowable error range. -->
 ### <font color="red">We will upload the trained models and log files gradually.</font>
@@ -32,12 +34,27 @@ All our experiments are conducted on four NVIDIA GeForce RTX 3090, if you wanna 
 | PE-Net-ProtoQuery (PredCls) | GQA | 48.4 | 51.42 | 34.59 | 36.53 | 40.35 | 42.71  | [Log Link](./logs/PENet-DPPLML-GQA-predcls.log) |
 
 
-## Tips
+## 🧩 Tips
 
 We use the `rel_nms` [operation](./maskrcnn_benchmark/data/datasets/evaluation/vg/sgg_eval.py) provided by [RU-Net](https://github.com/siml3/RU-Net/blob/main/maskrcnn_benchmark/data/datasets/evaluation/vg/sgg_eval.py) and [HL-Net](https://github.com/siml3/HL-Net/blob/main/maskrcnn_benchmark/data/datasets/evaluation/vg/sgg_eval.py) in PredCls and SGCls to filter the predicted relation predicates, which encourages diverse prediction results. 
 
+## 📚 Citation
+If you find this project useful for your research, please kindly cite our paper:
 
-## Acknowledgement
+```bibtex
+@article{zhang2025query,
+  title={Query-guided predicate decoupling and prototype approximation learning for scene graph generation},
+  author={Zhang, Guoqing and Kan, Shichao and Zhang, Yue and Cen, Yigang and Xu, Wanru and Jin, Yi and Li, Yidong},
+  journal={Expert Systems with Applications},
+  pages={129525},
+  year={2025},
+  publisher={Elsevier}
+}
+```
+
+## 🧧 Acknowledgement
 
 The code is implemented based on [Scene-Graph-Benchmark.pytorch](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch) and [PE-Net](https://github.com/VL-Group/PENET).
+
+
 
